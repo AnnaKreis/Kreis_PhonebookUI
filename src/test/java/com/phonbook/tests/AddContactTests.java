@@ -30,6 +30,7 @@ public class AddContactTests extends TestBase {
         //verify contact is added
         Assert.assertTrue(isContactAdded("Alla"));
 
+
     }
 
     public void fillContactForm(String name, String lastName, String phone, String email, String address, String description) {
@@ -65,6 +66,5 @@ public class AddContactTests extends TestBase {
         driver.findElement(By.xpath("//button[.='Remove']")).click();
 
     }
-
 
 }

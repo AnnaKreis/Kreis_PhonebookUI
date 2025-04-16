@@ -16,4 +16,6 @@ public class LoginTests extends TestBase {
         //verify SingOut button is displayed
         Assert.assertTrue(isSignOutButtonPresent());
     }
+
+
 }

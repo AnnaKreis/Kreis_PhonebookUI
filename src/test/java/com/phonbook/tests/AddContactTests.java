@@ -60,6 +60,7 @@ public class AddContactTests extends TestBase {
         }
         return false;
     }
+
     @AfterMethod
     public void postCondition() {
         driver.findElement(By.cssSelector(".contact-item_card__2SOIM")).click();

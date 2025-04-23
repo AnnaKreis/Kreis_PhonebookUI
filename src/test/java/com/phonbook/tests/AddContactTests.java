@@ -11,6 +11,9 @@ public class AddContactTests extends TestBase {
     //login
     @BeforeMethod
     public void preconditions() {
+        if (!app.getUser().isLoginPresent()) {
+            app.getUser().clickOnSignOutButton();
+        }
         app.getUser().clickOnLoginLink();
         app.getUser().fillRegisterLoginForm(new User().setEmail("mekili4034@dpcos.com").setPassword("Aa!12345"));
         app.getUser().clickOnLoginButton();

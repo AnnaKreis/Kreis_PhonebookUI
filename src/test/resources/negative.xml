@@ -2,13 +2,13 @@
 <suite name="Negative" verbose="1">
     <test name="Negative">
         <classes>
-            <class name="com.phonebook.tests.CreateAccountTests">
+            <class name="com.phonebook.tests.LoginTests">
                 <methods>
                     <include name=".*Negative.*">
                     </include>
                 </methods>
             </class>
-            <class name="com.phonebook.tests.LoginTests">
+            <class name="com.phonebook.tests.CreateAccountTests">
                 <methods>
                     <include name=".*Negative.*">
                     </include>

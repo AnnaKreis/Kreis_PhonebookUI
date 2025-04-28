@@ -45,6 +45,8 @@ public class BaseHelper {
         }
     }
 
+
+
     public void pause(int millis) {
         try {
             Thread.sleep(millis);

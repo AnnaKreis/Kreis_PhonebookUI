@@ -15,7 +15,7 @@ public class LoginTests extends TestBase {
         }
     }
 
-    @Test(priority = 1)
+    @Test
     public void loginPositiveTest() {
         logger.info("Login with data -> " + UserData.EMAIL + "************" + UserData.PASSWORD);
         app.getUser().clickOnLoginLink();
@@ -25,7 +25,7 @@ public class LoginTests extends TestBase {
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
 
-    @Test(priority = 2)
+    @Test
     public void loginNegativeWithoutEmailTest() {
         app.getUser().clickOnLoginLink();
         app.getUser().fillRegisterLoginForm(new User()

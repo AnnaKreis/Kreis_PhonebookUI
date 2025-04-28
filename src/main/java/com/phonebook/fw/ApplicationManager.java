@@ -1,4 +1,4 @@
-package com.phonbook.fw;
+package com.phonebook.fw;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

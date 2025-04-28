@@ -1,6 +1,6 @@
-package com.phonbook.fw;
+package com.phonebook.fw;
 
-import com.phonbook.models.Contact;
+import com.phonebook.models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

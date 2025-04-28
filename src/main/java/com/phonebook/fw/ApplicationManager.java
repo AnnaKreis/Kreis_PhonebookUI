@@ -1,14 +1,20 @@
 package com.phonebook.fw;
 
+import com.phonebook.utils.MyListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
+import org.openqa.selenium.support.events.WebDriverListener;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
 public class ApplicationManager {
     String browser;
     WebDriver driver;
+    Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
     UserHelper user;
     ContactHelper contact;
@@ -21,10 +27,14 @@ public class ApplicationManager {
     public void init() {
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
-        }
-        else if (browser.equalsIgnoreCase("firefox")) {
+            logger.info("Test start in Chrome browser");
+        } else if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
+            logger.info("Test start in Firefox browser");
         }
+        WebDriverListener listener = new MyListener();
+        driver = new EventFiringDecorator<>(listener).decorate(driver);
+        logger.info("Current url -> " + driver.getCurrentUrl());
 
         driver.get("https://telranedu.web.app");
         driver.manage().window().maximize();

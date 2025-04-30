@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.HomePageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-30T09:54:41" hostname="LAPTOP-6EFDPQFV" time="0.014">
+  <properties/>
+  <testcase name="isHomeComponentPresentTests" classname="com.phonebook.tests.HomePageTests" time="0.014"/>
+  <system-out><![CDATA[11:54:30.920 [Test worker] INFO  com.phonebook.tests.TestBase -- Start testisHomeComponentPresentTests[]
+11:54:30.922 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find elements -> Logger[com.phonebook.utils.MyListener]
+11:54:30.922 [Test worker] INFO  com.phonebook.utils.MyListener -- =========================================================
+11:54:40.940 [Test worker] INFO  com.phonebook.utils.MyListener -- List size -> 0
+11:54:40.940 [Test worker] INFO  com.phonebook.utils.MyListener -- =========================================================
+11:54:40.940 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator will find -> By.cssSelector: [href='/home']
+11:54:40.940 [Test worker] INFO  com.phonebook.utils.MyListener -- =========================================================
+11:54:40.954 [Test worker] INFO  com.phonebook.utils.MyListener -- The locator is -> By.cssSelector: [href='/home']
+11:54:40.954 [Test worker] INFO  com.phonebook.utils.MyListener -- =========================================================
+11:54:41.049 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find elements -> Logger[com.phonebook.utils.MyListener]
+11:54:41.049 [Test worker] INFO  com.phonebook.utils.MyListener -- =========================================================
+11:54:41.062 [Test worker] INFO  com.phonebook.utils.MyListener -- List size -> 1
+11:54:41.062 [Test worker] INFO  com.phonebook.utils.MyListener -- =========================================================
+11:54:41.063 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: isHomeComponentPresentTests
+11:54:41.063 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:54:41.063 [Test worker] INFO  com.phonebook.tests.TestBase -- ==========================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
